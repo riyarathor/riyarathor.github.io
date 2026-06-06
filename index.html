@@ -1,3 +1,4 @@
+· HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +29,7 @@
 }
 html{scroll-behavior:smooth;}
 body{font-family:var(--sans);background:var(--bg);color:var(--text);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
-
+ 
 /* ── NAV ── */
 nav{
   position:fixed;top:0;left:0;right:0;
@@ -44,7 +45,7 @@ nav{
 .nav-links{display:flex;gap:2.5rem;list-style:none;}
 .nav-links a{font-size:0.78rem;font-weight:400;letter-spacing:0.06em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s;}
 .nav-links a:hover{color:var(--text);}
-
+ 
 /* ── HERO ── */
 #hero{
   min-height:100vh;
@@ -104,7 +105,7 @@ nav{
 .btn-dark:hover{background:#c07d88;}
 .btn-outline{background:transparent;color:var(--muted);border:1px solid var(--line);}
 .btn-outline:hover{background:var(--bg2);color:var(--text);}
-
+ 
 /* ── ABOUT STRIP ── */
 #about{
   display:grid;grid-template-columns:1fr 2fr;gap:4rem;
@@ -124,7 +125,7 @@ nav{
 }
 .about-lead em{font-style:italic;color:var(--accent);}
 .about-body{font-size:0.9rem;font-weight:300;color:var(--muted);line-height:1.9;max-width:580px;}
-
+ 
 /* ── STATS ROW ── */
 .stats-row{
   display:grid;grid-template-columns:repeat(3,1fr);
@@ -137,7 +138,7 @@ nav{
 .stat:last-child{border-right:none;}
 .stat-num{font-family:var(--serif);font-size:2.8rem;font-weight:400;line-height:1;color:var(--accent);margin-bottom:6px;}
 .stat-desc{font-size:0.78rem;font-weight:300;color:var(--muted);letter-spacing:0.02em;}
-
+ 
 /* ── SECTION WRAPPER ── */
 .section-wrap{
   padding:5rem clamp(1.5rem,8vw,10rem);
@@ -157,7 +158,7 @@ nav{
   font-weight:400;letter-spacing:-0.02em;line-height:1.15;color:var(--text);margin-bottom:0.5rem;
 }
 .section-desc{font-size:0.88rem;font-weight:300;color:var(--muted);}
-
+ 
 /* ── PROJECTS ── */
 .project-list{display:flex;flex-direction:column;gap:0;}
 .project-item{
@@ -201,7 +202,7 @@ nav{
 .project-link:hover{color:var(--accent);}
 .project-link .arrow{font-size:1rem;transition:transform .2s;}
 .project-link:hover .arrow{transform:translate(2px,-2px);}
-
+ 
 /* ── SKILLS ── */
 .skills-grid{
   display:grid;grid-template-columns:200px 1fr;gap:4rem;
@@ -224,7 +225,7 @@ nav{
   font-size:0.68rem;font-weight:400;letter-spacing:0.06em;text-transform:uppercase;
   color:var(--subtle);
 }
-
+ 
 /* ── EXPERIENCE ── */
 .exp-list{display:flex;flex-direction:column;gap:0;}
 .exp-item{
@@ -238,7 +239,7 @@ nav{
 .exp-role{font-size:1rem;font-weight:500;color:var(--text);margin-bottom:3px;}
 .exp-org{font-size:0.85rem;font-weight:300;color:var(--muted);margin-bottom:0.75rem;}
 .exp-desc{font-size:0.83rem;font-weight:300;color:var(--muted);line-height:1.8;}
-
+ 
 /* ── CERTS ── */
 .cert-grid{
   display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem;
@@ -257,7 +258,7 @@ nav{
 }
 .badge-progress{background:var(--prog-bg);color:var(--prog);}
 .badge-done{background:var(--done-bg);color:var(--done);}
-
+ 
 /* ── CONTACT ── */
 #contact{
   padding:6rem clamp(1.5rem,8vw,10rem);
@@ -283,7 +284,7 @@ nav{
 }
 .contact-list a:hover{padding-left:8px;color:var(--accent);}
 .contact-list .link-arrow{color:var(--subtle);font-size:1rem;}
-
+ 
 /* ── FOOTER ── */
 footer{
   display:flex;align-items:center;justify-content:space-between;
@@ -291,12 +292,12 @@ footer{
   border-top:1px solid var(--line);
   font-size:0.72rem;font-weight:300;color:var(--subtle);letter-spacing:0.04em;
 }
-
+ 
 /* ── ANIMATIONS ── */
 @keyframes fadeUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
 .fade{opacity:0;}
 .fade.visible{animation:fadeUp .65s ease forwards;}
-
+ 
 /* ── RESPONSIVE ── */
 @media(max-width:768px){
   .nav-links{display:none;}
@@ -318,7 +319,7 @@ footer{
 </style>
 </head>
 <body>
-
+ 
 <!-- NAV -->
 <nav>
   <a href="#hero" class="nav-name">Riya</a>
@@ -329,7 +330,7 @@ footer{
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
-
+ 
 <!-- HERO -->
 <section id="hero">
   <div class="hero-bg-number" aria-hidden="true">R</div>
@@ -349,7 +350,7 @@ footer{
     </div>
   </div>
 </section>
-
+ 
 <!-- ABOUT -->
 <div id="about" class="fade">
   <p class="about-label">About</p>
@@ -360,7 +361,7 @@ footer{
     </p>
   </div>
 </div>
-
+ 
 <!-- STATS -->
 <div class="stats-row">
   <div class="stat fade">
@@ -376,7 +377,7 @@ footer{
     <div class="stat-desc">Core tools: SQL · Python · Tableau · Excel</div>
   </div>
 </div>
-
+ 
 <!-- PROJECTS -->
 <div class="section-wrap" id="projects">
   <div class="section-header fade">
@@ -387,7 +388,7 @@ footer{
     </div>
   </div>
   <div class="project-list">
-
+ 
     <div class="project-item fade">
       <p class="project-num">01</p>
       <div class="project-body">
@@ -403,7 +404,7 @@ footer{
       </div>
       <a href="#" class="project-link" target="_blank">View <span class="arrow">↗</span></a>
     </div>
-
+ 
     <div class="project-item fade">
       <p class="project-num">02</p>
       <div class="project-body">
@@ -418,7 +419,7 @@ footer{
       </div>
       <a href="#" class="project-link" target="_blank">View <span class="arrow">↗</span></a>
     </div>
-
+ 
     <div class="project-item fade">
       <p class="project-num">03</p>
       <div class="project-body">
@@ -434,7 +435,7 @@ footer{
       </div>
       <a href="#" class="project-link" target="_blank">View <span class="arrow">↗</span></a>
     </div>
-
+ 
     <div class="project-item fade">
       <p class="project-num">04</p>
       <div class="project-body">
@@ -449,10 +450,10 @@ footer{
       </div>
       <a href="#" class="project-link" target="_blank">View <span class="arrow">↗</span></a>
     </div>
-
+ 
   </div>
 </div>
-
+ 
 <!-- SKILLS -->
 <div class="section-wrap" id="skills">
   <div class="section-header fade">
@@ -492,7 +493,7 @@ footer{
     </div>
   </div>
 </div>
-
+ 
 <!-- EXPERIENCE -->
 <div class="section-wrap" id="experience">
   <div class="section-header fade">
@@ -521,7 +522,7 @@ footer{
     </div>
   </div>
 </div>
-
+ 
 <!-- CERTIFICATIONS -->
 <div class="section-wrap">
   <div class="section-header fade">
@@ -552,7 +553,7 @@ footer{
     </div>
   </div>
 </div>
-
+ 
 <!-- CONTACT -->
 <section id="contact">
   <div class="contact-left fade">
@@ -569,12 +570,12 @@ footer{
     </ul>
   </div>
 </section>
-
+ 
 <footer>
   <span>Riya · Delhi, India · 2025</span>
   <span>Data Analyst & SEO Specialist</span>
 </footer>
-
+ 
 <script>
 const io = new IntersectionObserver((entries) => {
   entries.forEach((e) => {
@@ -586,6 +587,7 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.08 });
 document.querySelectorAll('.fade').forEach(el => io.observe(el));
 </script>
-
+ 
 </body>
 </html>
+ 
